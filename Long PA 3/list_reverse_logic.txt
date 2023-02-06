@@ -1,0 +1,10 @@
+for i in grid:
+	x = 0 
+	y = len(i) - 1
+	while x! = y:
+	swap = i[x]
+	i[x] = i[y]
+	i[y] = swap
+	x += 1
+	y -= 1
+	

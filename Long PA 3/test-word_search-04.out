@@ -1,0 +1,16 @@
+45375 words read from the dictionary.
+Grid read.  wid=6 hei=6
+y c o d e j
+h s e y p k
+l p h b w a
+l o b w x z
+w o b a a i
+p l y y c g
+cod, code, de, ode, ply (horizontal, L-to-R)
+abo, bow, do, doc, ed, jed, yes (horizontal, R-to-L)
+by, po, pool, spool, way (vertical, top-to-bottom)
+ax, by, he, loop, loops (vertical, bottom-to-top)
+by, loy, wag (diagonal, top-left to bottom-right)
+be, cab (diagonal, bottom-right to top-left)
+ax, ed, oh, po, so (diagonal, bottom-left to top-right)
+ax, de, how (diagonal, top-right to bottom-left)
