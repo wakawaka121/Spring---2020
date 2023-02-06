@@ -1,0 +1,43 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hide / Show</title>
+</head>
+<body>
+
+<button id="hsButton" type="button" onclick="hideShow()">Hide</button>
+<div id="hideShow">
+<br /> This text will appear and disappear.
+</div>
+
+<script>
+var hsButton = document.getElementById("hsButton");
+hsButton.addEventListener("onclick", hideShow);
+
+function hideShow(){
+	var hideText = "<br>";
+	var returnText = "<br>This text will appear and disappear.";
+	var currentText = document.getElementById("hideShow").innerHTML;
+	var changeText = document.getElementById("hideShow");
+	var changeButton = document.getElementById("hsButton");
+	
+	
+	if (currentText == hideText){
+		changeText.innerHTML = returnText;
+		changeButton.innerHTML = "Hide"
+	} else{
+		changeText.innerHTML = hideText;
+		changeButton.innerHTML = "Show";
+	}
+		
+	
+}
+
+
+</script>
+
+
+</body>
+</html>

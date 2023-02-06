@@ -1,0 +1,54 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>An Eventful Calculator</title>
+</head>
+<body>
+ <h1>Calculator</h1>
+ 
+ x <input id = "xValue">
+ <br>
+ y <input id = "yValue">
+ <br>
+ <button id = "showResults">Show results</button>
+ <br>
+ <br>
+ <div id ="sumPrint" ></div>
+ <div id ="difPrint"></div>
+ <div id ="productPrint"></div>
+ <div id ="quotientPrint"></div> 
+ <div id = "modulusPrint"></div>
+ 
+ <script>
+
+ var sumChange = document.getElementById("sumPrint");
+ var difChange = document.getElementById("difPrint");
+ var productChange = document.getElementById("productPrint");
+ var quotientChange = document.getElementById("quotientPrint");
+ var modulusChange = document.getElementById("modulusPrint");
+ 
+ element = document.getElementById("showResults");
+ element.addEventListener("click", function actionEvent(){
+	var x = Number(document.getElementById("xValue").value);
+	var y = Number(document.getElementById("yValue").value);
+	var sum = x + y;
+	var dif = x - y;
+	var product = x * y;
+	var quotient = x/y;
+	var modulus = x%y;
+	sumChange.innerHTML = x + " + " + y + " = " + sum;
+	difChange.innerHTML = x + " - " + y + " = " + dif;
+	productChange.innerHTML = x + " * " + y + " = " + product;
+	quotientChange.innerHTML = x + " / " + y + " = " + quotient;
+	modulusChange.innerHTML = x + " % " + y + " = " + modulus;
+	 
+ });
+ 
+ 
+ </script>
+ 
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Purchase Receipt</title>
+<link href="purchase_receipt.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class = "formDiv">
+
+<form onsubmit = "makeReceipt();return false">
+	<div id = "inputText">
+	<label for ="first">First Name</label>
+	<input type = "text" id = "first" pattern = "[A-Z a-z]*" required> 
+	</div>
+	<br>
+	
+	<div id = "inputText">
+	<label for = "last">Last Name</label>
+	<input type = "text" id = "last" pattern = "[A-Z a-z]*" required>
+	</div>
+	<br>
+	
+	<div id = "inputText">
+	<label for = "phone">Phone</label>
+	<input type ="tel" id = "phone" pattern = "^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required>
+	</div>
+	<br>
+	
+	<div id = "inputText">
+	<label for = "city">City</label>
+	<input type = "text" id = "city" pattern = "[A-Z a-z]*" required>
+	</div>
+	<br>
+	
+	<div id = "inputText">
+	<label for = "stateDrop">State</label>
+		<select id = "stateDrop" required>
+			<option value = "AZ">Arizona</option>
+			<option value = "NY">New York</option>
+			<option value = "WA">Washington</option>
+			<option value = "TX">Texas</option>
+			<option value = "SC">South Carolina</option>
+		</select>
+	</div>
+	<br>
+	
+	<div id = "inputText">	
+	<label for = "zip">Zip</label>	
+	<input type = "text" id = "zip" pattern = "[0-9]{5}" required>
+	</div>
+	<br>
+	
+	<fieldset>
+	<legend>Size</legend>
+	<input type = "radio" name = "price" id ="small" value = "2.00"> Small $2.00
+	<br>
+	<input type = "radio" name = "price" id = "medium" value = "2.65"> Medium $2.65
+	<br>
+	<input type = "radio" name = "price" id = "large" value = "2.99"> Large $2.99
+	<br>
+	</fieldset>
+	<br>
+	
+	<div id = "inputText">
+	<label for = "quantity">Quantity(1..5)</label>
+	<input type = "number" id = "quantity" min = "1" max = "5" >
+	</div>
+	<br>
+	
+	<div class = "buttonDiv">
+	<input type = "submit" value = "Continue">
+	</div>
+	
+</form>
+</div>
+<br>
+
+<div id = "printReceipt" >
+<h3>Receipt</h3>
+<p>
+Purchase Date: <span id="purchaseDate"></span>
+<br>
+Purchased <span id = "numberOf"></span>
+ <span id= "sizeItem"></span> 
+ item(s)
+ <br>
+Total Cost $<span id = "totalCost"></span>
+</p>
+<fieldset>
+<legend id = "receiptFormat">Ship to</legend>
+<p id = "nameAddress"></p>
+</fieldset>
+</div>
+
+<script>
+function getRadioValue(){
+	var small = document.getElementById("small");
+	var medium = document.getElementById("medium");
+	var large = document.getElementById("large");
+	var radioSelected = "";
+	
+	if (small.checked){
+		radioSelected = small.value;
+		return radioSelected;
+	}
+	
+	if (medium.checked){
+		radioSelected = medium.value;
+		return radioSelected;
+	}
+	
+	if (large.checked){
+		radioSelected = large.value;
+		return radioSelected;
+	}
+}
+
+function getRadioSize(){
+	var small = document.getElementById("small");
+	var medium = document.getElementById("medium");
+	var large = document.getElementById("large");
+	
+	if (small.checked){
+		radioSize = "Small";
+		return radioSize;
+	}
+	
+	if (medium.checked){
+		radioSize = "Medium";
+		return radioSize;
+	}
+	
+	if (large.checked){
+		radioSize = "Large";
+		return radioSize;
+	}
+}
+
+function makeReceipt(){
+	var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+	var date = new Date();
+	var day = date.getDate();
+	var month = months[date.getMonth()];
+	var year = date.getFullYear();
+	var orderDate = day + "-" + month+ "-" + year;
+	var firstName = document.getElementById("first").value.trim();
+	var lastName = document.getElementById("last").value.trim();
+	var	phone = document.getElementById("phone").value;
+	var city = document.getElementById("city").value.trim();
+	var state = document.getElementById("stateDrop").value;
+	var zip = document.getElementById("zip").value;
+	var quantity = document.getElementById("quantity").value;
+	var divPrint = document.getElementById("printReceipt");
+	var radioValue =  getRadioValue();
+	var radioSize = getRadioSize();
+	document.getElementById("purchaseDate").innerHTML = orderDate;
+	document.getElementById("numberOf").innerHTML = String(quantity);
+	document.getElementById("sizeItem").innerHTML = radioSize;
+	document.getElementById("totalCost").innerHTML = String((radioValue * quantity).toFixed(2));
+	document.getElementById("nameAddress").innerHTML = (String(firstName) + " " + String(lastName) + "<br>" + String(city) + ", " + state + "<br>" + String(zip));
+	document.getElementById("printReceipt").style["display"] =  "block";
+}
+</script>
+
+
+
+</body>
+</html>

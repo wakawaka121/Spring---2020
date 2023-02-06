@@ -1,0 +1,29 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pixel Increase</title>
+</head>
+<body>
+<button id = "makeItbig">Increment by 1px</button>
+<br>
+<br>
+<div id = "stringGetsbig">Increase my point 1px each click.</div>
+
+<script>
+var clickEvent = document.getElementById("makeItbig");
+clickEvent.addEventListener("click", growOnClick);
+var defaultSize = 16;
+
+function growOnClick(){
+	defaultSize++
+	var pxString = "px"
+	var numString = defaultSize.toString() + pxString;
+	var goingTogrow = document.getElementById("stringGetsbig");
+	goingTogrow.style["font-size"] = numString;
+}
+
+</script>
+</body>
+</html>

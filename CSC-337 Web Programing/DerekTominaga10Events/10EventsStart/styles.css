@@ -1,0 +1,50 @@
+/* Derek Tominaga*/
+@CHARSET "UTF-8";
+
+header {
+	background-color: blue;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+}
+
+iframe {
+	margin: auto;
+	width: 500px;
+	height: 500px;
+	align: right;
+	
+}
+
+.iframeButtons{
+	padding: 5px;
+	float: left;
+	background-color: lightgrey;
+	height: 500px;
+	
+} 
+
+.pinkPink{
+	width: 140px;
+	height: 24px;
+	border-style: solid;
+	border-color: red;
+	background-color: pink;
+	text-align: center;
+	visibility: visible;
+}
+
+.myName{
+	background-color: blue;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+	
+}
+
+.myImage {
+	width: 50px;
+	height: 50px;
+}

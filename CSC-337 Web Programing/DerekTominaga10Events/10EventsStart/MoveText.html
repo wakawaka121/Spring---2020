@@ -1,0 +1,28 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Move Text</title>
+</head>
+<body>
+<input id = "leftSide"> <button id = "iGetclicked">>> Move left to right >></button><input id = "rightSide">
+
+<script>
+var whenButtonclicked = document.getElementById("iGetclicked");
+whenButtonclicked.addEventListener("click", moveFunction);
+
+function moveFunction(){
+	var leftText = document.getElementById("leftSide");
+	var rightText = document.getElementById("rightSide");
+	var empty = "";
+	var copy = leftText.value;
+	leftText.value = empty
+	rightText.value = copy;
+
+}
+
+</script>
+
+</body>
+</html>

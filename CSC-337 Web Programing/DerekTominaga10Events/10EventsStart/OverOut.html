@@ -1,0 +1,39 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Over Out</title>
+<link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class = "pinkPink" id = "hover">Hover over Me</div>
+<br>
+<div class = "pinkPink" id = "valueChange"></div>
+
+<script>
+var count = 0;
+var inEvent = document.getElementById("hover");
+inEvent.addEventListener("mouseover", eventIn);
+var outEvent = document.getElementById("hover");
+outEvent.addEventListener("mouseout", eventOut);
+
+function eventIn(){
+	count++
+	var changeText = document.getElementById("valueChange");
+	changeText.innerHTML = ("Entered " + count + " events");
+	
+}
+
+function eventOut(){
+	count++
+	var changeText = document.getElementById("valueChange");
+	changeText.innerHTML = ("Exited " + count + " events")
+	
+}
+
+
+</script>
+
+</body>
+</html>

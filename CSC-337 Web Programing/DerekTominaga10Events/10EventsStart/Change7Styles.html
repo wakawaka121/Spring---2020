@@ -1,0 +1,34 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change 7 Styles</title>
+</head>
+<body>
+<h1 id="clickMe">Click this text</h1>
+<br>
+<hr>
+<div id= "makeOver">Click "Click this text" above to change this div in several ways</div>
+
+<script>
+var eventClickme = document.getElementById("clickMe");
+eventClickme.addEventListener("click", newLook);
+
+function newLook(){
+	var lookAtmeNow = document.getElementById("makeOver");
+	lookAtmeNow.style.width = "300px";
+	lookAtmeNow.style.border = "solid";
+	lookAtmeNow.style["border-color"] = "red"
+	lookAtmeNow.style.padding = "50px";
+	lookAtmeNow.style["background-color"] = "lightgrey";
+	lookAtmeNow.style.color = "green";
+	lookAtmeNow.style["font-size"] = "24px";
+	lookAtmeNow.style["float"] = "right";
+	lookAtmeNow.innerHTML = "Change innerHTML, font is green and 24px, border solid and 5px, width 300px, float right, padding 50 px, background lightgrey "
+	
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stack Changes</title>
+</head>
+<body>
+
+Push<input id = "valuePushed"><button id = "valuePoped">Pop</button>
+<ul id = "unorderedList"></ul>
+
+<script>
+var getPush = document.getElementById("valuePushed");
+getPush.addEventListener("change", pushValue);
+var getPop = document.getElementById("valuePoped");
+getPop.addEventListener("click", popValue);
+var theArray = [];
+
+function pushValue(){
+	var items = "";
+	var valueInput = document.getElementById("valuePushed");
+	var empty = "";
+	theArray.push(valueInput.value);
+	valueInput.value = empty
+	for (var i = (theArray.length-1); i >=0; i--){
+		items += "<li>" + theArray[i] + "</li>"
+		document.getElementById("unorderedList").innerHTML = items
+	}
+}
+	
+function popValue(){
+	var items = "";
+	theArray.pop();
+	for (var i = (theArray.length-1); i >=0; i--){
+		items += "<li>" + theArray[i] + "</li>"
+		document.getElementById("unorderedList").innerHTML = items
+	}
+}
+
+	
+
+
+</script>
+
+
+
+</body>
+</html>

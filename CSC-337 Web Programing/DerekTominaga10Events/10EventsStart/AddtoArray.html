@@ -1,0 +1,36 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add to Array</title>
+</head>
+<body>
+<br>
+Enter a name: <input id="addName">
+<br>
+<p>The array of names:</p>
+<br>
+<div id = "listOfnames">
+</div>
+
+<script>
+var afterEnter = document.getElementById("addName")
+afterEnter.addEventListener("change", arrayAdd)
+var nameList = [];
+
+function arrayAdd(){
+	var count = 1;
+	var nameString = ""
+	nameList.push(document.getElementById("addName").value);
+	document.getElementById("addName").value = "";
+	for (var i = 0; i < nameList.length; i++){
+		nameString += (String(count)+ ":" + " " + nameList[i] + "<br>");
+		document.getElementById("listOfnames").innerHTML = nameString;
+		count ++;
+	}
+}
+
+</script>
+</body>
+</html>

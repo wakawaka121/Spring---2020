@@ -1,0 +1,28 @@
+<!-- Derek Tominaga -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Running Sum</title>
+</head>
+<body>
+Enter a number:<input id= "numToadd">
+<br>
+<br>
+<div id = "valuesSum">sum of [] = 0</div>
+
+<script>
+var enterTocontinue = document.getElementById("numToadd");
+enterTocontinue.addEventListener("change", runningSum);
+var sum = 0;
+var numberArray = [];
+function runningSum(){
+	var inputValue = (document.getElementById("numToadd").value);
+	numberArray.push(inputValue);
+	sum += Number(inputValue);
+	enterTocontinue.value = "";
+	document.getElementById("valuesSum").innerHTML = ("sum of ["+ numberArray.slice(0, numberArray.length) + "] =" + String(sum))
+}
+</script>
+</body>
+</html>

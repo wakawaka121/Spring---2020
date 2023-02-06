@@ -1,0 +1,118 @@
+/*Derek Tominaga*/
+/*@charset "UTF-8";*/
+/* TODO: Add any and all needed styles here */
+body{
+	margin: solid;
+	background-color:  #E6F6EA;
+	margin: auto;
+}
+
+.banner{
+	background-image: url("images/rancidbannerbg.png");
+	width: 100%;
+}
+
+.poster_movie_info{
+	width: 20%;
+	float: right;
+}
+
+.movie_info{
+	margin-top: -19px;
+	background-color: #A2B964;
+	width: 100%;
+	height: 100%;
+}
+
+.shadow{
+	text-align: center;
+	text-shadow: 2px 3px #242725;
+}
+
+.text_color{
+	color: red;
+	font: bold;
+	font-family: "Arial";
+	font-size: 60px;
+	position: relative;
+	top: -30px;
+	left: 20px;
+}
+
+.the_one_div{
+	padding: 5ps;
+	background-color: #E6F6EA;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	margin: auto:
+}
+.logo{
+	background-image: url("images/rottenlargebg.png");
+	width: 100%;
+	height: 83px;
+}
+
+.rotten_icon{
+	border-radius: 15%;
+	overflow: hidden;
+}
+.main_content{
+	border-radius: 15px;
+	background-color: #EEEEEE;
+	margin: auto;
+	overflow: hidden;
+	width: 74%;
+	
+}
+
+.info_content{
+	width: 100%;
+	height: 100%;
+}
+
+.comment_left{
+	padding-left:60px;
+	float: left;
+	width: 33%;
+	margin: auto;
+}
+
+.comment_right{
+	padding-right: 60px;
+	float: right;
+	width: 33%;
+	margin: auto;
+	
+}
+
+.text_color{
+	color: red;
+	font: bold;
+	font-family: "Arial";
+	font-size: 60px;
+	position: relative;
+	top: -30px;
+	left: 20px;
+}
+
+.comment_bubble{
+	border: solid;
+	border-radius: 15px;
+	padding: 25px;
+	background-color: white;
+	width: auto;
+	min-height: 10px;
+	margin: auto;
+}
+
+.critic_bubble{
+	text-align: left;
+	margin: auto;
+	
+}
+
+.splat_position{
+	float: left;
+	margin: auto;
+}

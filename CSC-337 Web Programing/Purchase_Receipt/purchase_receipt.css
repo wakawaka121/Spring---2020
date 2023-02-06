@@ -1,0 +1,55 @@
+/*Derek Tominaga*/
+@charset "UTF-8";
+
+.formDiv{
+	width: 250px;
+	border-style: outset;
+	border-width: 10px;
+	border-color: grey;
+	background-color: LightBlue;
+	padding: 20px;
+	display: block;
+	font-size: 14px;
+		
+}
+input{
+	display: inline block;
+	float: center;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+
+form select{
+	display: inline block;
+	margin-left: 0px;
+	
+}
+
+label{
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+	margin-right: 6px;
+}
+
+.buttonDiv{
+	text-align: center;
+	
+}
+
+#printReceipt{
+	padding: 25px;
+	display: none;
+	width: 400px;
+	border-style: outset;
+	border-width: 10px;
+	border-color: red;
+	background-color: pink;
+}
+
+#receiptFormat{
+	padding-top: 0px;
+	width: auto;
+	height: 25%;
+}
