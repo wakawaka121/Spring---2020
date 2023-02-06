@@ -1,0 +1,21 @@
+PROBLEM DEFINITION:
+  edges: [['a', 'b'], ['a', 'c'], ['b', 'c'], ['b', 'd'], ['a', 'e'], ['e', 'd'], ['b', 'e']]
+  src:   a
+  dst:   d
+ACCEPTABLE SOLUTIONS:
+  ['a', 'b', 'd']
+  ['a', 'b', 'e', 'd']
+  ['a', 'c', 'b', 'd']
+  ['a', 'c', 'b', 'e', 'd']
+  ['a', 'e', 'b', 'd']
+  ['a', 'e', 'd']
+
+Creating the Maze object...
+
+Calling solve(a,d)...
+
+NOTE: I am *not* printing the solution, because I want the output to be the same, no matter which of the solutions a given student returns.
+
+OK!  The returned solution was in the set of expected solutions.
+
+TESTCASE COMPLETED

@@ -1,0 +1,60 @@
+def solve(self, src, dest):
+        visited = []
+        print (visited)
+        print (src,dest)
+        if src == dest:
+            print (src,dest)
+            return [src]
+        else:
+            print(dest, self._maze[src])
+            if dest in self._maze[src]:
+                print (src, dest)
+                return [src, dest]
+            else:
+                visited.append(src)
+                print(src, dest, visited)
+                return self.solve_helper(src, dest, visited)
+                    
+    def solve_helper(self, src, dest, visited):
+        print(src, dest)
+        print(self._maze[src])
+        for vertex in self._maze[src]:
+            print(visited)
+            print(vertex)
+            if vertex in visited:
+                print(vertex, visited)
+                return None
+            else:
+                visited.append(vertex)
+                print(src, vertex, visited)
+                return [src] + self.solve(vertex, dest)
+                #self.solve(vertex, dest)
+            #return [src] + self.solve(vertex, dest)
+
+
+
+def solve(self,src,dest):
+        visited = []
+        path = []
+        return self.solve_helper(src, dest, visited, path)
+        """
+        if dest not in path:
+            return None
+        else: 
+            return path
+        """
+    def solve_helper(self, src, dest, visited, path):
+        if src == dest:
+            return [src]
+        else:
+            path.append[src]
+            visited.append(src)
+            for vertex in self._maze[src]:
+                if vertex not in visited:
+                    if self.solve_helper(vertex,dest,visited) is not None:
+                        return path.append(self.solve_helper(vertex,dest,visited))
+                #    return None
+                #else:
+                    #visited.append(vertex)
+                    #return [src] + self.solve_helper(vertex, dest, visited)
+        return None

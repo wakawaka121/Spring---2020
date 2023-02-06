@@ -1,0 +1,115 @@
+Frames per second?  (Give 0 to disable animation.)
+Please give the input data:
+INPUT DATA: [98, 90, -39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+QS: Data in: [98, 90, -39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Pivot:   98
+    Left:    [90, -39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Right:   []
+QS: Data in: [90, -39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Pivot:   90
+    Left:    [-39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Right:   []
+QS: Data in: [-39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Pivot:   -39
+    Left:    [-47, -49]
+    Right:   [-18, -37, 90, 90, -17, 7, 29, 9, -12, -7]
+QS: Data in: [-47, -49]
+    Pivot:   -47
+    Left:    [-49]
+    Right:   []
+QS: The length of the input data, [-49], is zero or one.  Returning immediately.
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [-47, -49]
+    Left (sorted):  [-49]
+    Right (sorted): []
+    Sorted data:    [-49, -47]
+QS: Data in: [-18, -37, 90, 90, -17, 7, 29, 9, -12, -7]
+    Pivot:   -18
+    Left:    [-37]
+    Right:   [90, 90, -17, 7, 29, 9, -12, -7]
+QS: The length of the input data, [-37], is zero or one.  Returning immediately.
+QS: Data in: [90, 90, -17, 7, 29, 9, -12, -7]
+    Pivot:   90
+    Left:    [90, -17, 7, 29, 9, -12, -7]
+    Right:   []
+QS: Data in: [90, -17, 7, 29, 9, -12, -7]
+    Pivot:   90
+    Left:    [-17, 7, 29, 9, -12, -7]
+    Right:   []
+QS: Data in: [-17, 7, 29, 9, -12, -7]
+    Pivot:   -17
+    Left:    []
+    Right:   [7, 29, 9, -12, -7]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: Data in: [7, 29, 9, -12, -7]
+    Pivot:   7
+    Left:    [-12, -7]
+    Right:   [29, 9]
+QS: Data in: [-12, -7]
+    Pivot:   -12
+    Left:    []
+    Right:   [-7]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: The length of the input data, [-7], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [-12, -7]
+    Left (sorted):  []
+    Right (sorted): [-7]
+    Sorted data:    [-12, -7]
+QS: Data in: [29, 9]
+    Pivot:   29
+    Left:    [9]
+    Right:   []
+QS: The length of the input data, [9], is zero or one.  Returning immediately.
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [29, 9]
+    Left (sorted):  [9]
+    Right (sorted): []
+    Sorted data:    [9, 29]
+QS: AFTER RECURSION...
+    Original data:  [7, 29, 9, -12, -7]
+    Left (sorted):  [-12, -7]
+    Right (sorted): [9, 29]
+    Sorted data:    [-12, -7, 7, 9, 29]
+QS: AFTER RECURSION...
+    Original data:  [-17, 7, 29, 9, -12, -7]
+    Left (sorted):  []
+    Right (sorted): [-12, -7, 7, 9, 29]
+    Sorted data:    [-17, -12, -7, 7, 9, 29]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [90, -17, 7, 29, 9, -12, -7]
+    Left (sorted):  [-17, -12, -7, 7, 9, 29]
+    Right (sorted): []
+    Sorted data:    [-17, -12, -7, 7, 9, 29, 90]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [90, 90, -17, 7, 29, 9, -12, -7]
+    Left (sorted):  [-17, -12, -7, 7, 9, 29, 90]
+    Right (sorted): []
+    Sorted data:    [-17, -12, -7, 7, 9, 29, 90, 90]
+QS: AFTER RECURSION...
+    Original data:  [-18, -37, 90, 90, -17, 7, 29, 9, -12, -7]
+    Left (sorted):  [-37]
+    Right (sorted): [-17, -12, -7, 7, 9, 29, 90, 90]
+    Sorted data:    [-37, -18, -17, -12, -7, 7, 9, 29, 90, 90]
+QS: AFTER RECURSION...
+    Original data:  [-39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Left (sorted):  [-49, -47]
+    Right (sorted): [-37, -18, -17, -12, -7, 7, 9, 29, 90, 90]
+    Sorted data:    [-49, -47, -39, -37, -18, -17, -12, -7, 7, 9, 29, 90, 90]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [90, -39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Left (sorted):  [-49, -47, -39, -37, -18, -17, -12, -7, 7, 9, 29, 90, 90]
+    Right (sorted): []
+    Sorted data:    [-49, -47, -39, -37, -18, -17, -12, -7, 7, 9, 29, 90, 90, 90]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [98, 90, -39, -18, -37, 90, 90, -17, -47, 7, 29, 9, -49, -12, -7]
+    Left (sorted):  [-49, -47, -39, -37, -18, -17, -12, -7, 7, 9, 29, 90, 90, 90]
+    Right (sorted): []
+    Sorted data:    [-49, -47, -39, -37, -18, -17, -12, -7, 7, 9, 29, 90, 90, 90, 98]
+AFTER THE SORT: [-49, -47, -39, -37, -18, -17, -12, -7, 7, 9, 29, 90, 90, 90, 98]

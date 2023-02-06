@@ -1,0 +1,75 @@
+Frames per second?  (Give 0 to disable animation.)
+Please give the input data:
+INPUT DATA: [-44, -43, -24, 18, 63, -37, 30, 93, -10, -8, -33]
+QS: Data in: [-44, -43, -24, 18, 63, -37, 30, 93, -10, -8, -33]
+    Pivot:   -44
+    Left:    []
+    Right:   [-43, -24, 18, 63, -37, 30, 93, -10, -8, -33]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: Data in: [-43, -24, 18, 63, -37, 30, 93, -10, -8, -33]
+    Pivot:   -43
+    Left:    []
+    Right:   [-24, 18, 63, -37, 30, 93, -10, -8, -33]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: Data in: [-24, 18, 63, -37, 30, 93, -10, -8, -33]
+    Pivot:   -24
+    Left:    [-37, -33]
+    Right:   [18, 63, 30, 93, -10, -8]
+QS: Data in: [-37, -33]
+    Pivot:   -37
+    Left:    []
+    Right:   [-33]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: The length of the input data, [-33], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [-37, -33]
+    Left (sorted):  []
+    Right (sorted): [-33]
+    Sorted data:    [-37, -33]
+QS: Data in: [18, 63, 30, 93, -10, -8]
+    Pivot:   18
+    Left:    [-10, -8]
+    Right:   [63, 30, 93]
+QS: Data in: [-10, -8]
+    Pivot:   -10
+    Left:    []
+    Right:   [-8]
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: The length of the input data, [-8], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [-10, -8]
+    Left (sorted):  []
+    Right (sorted): [-8]
+    Sorted data:    [-10, -8]
+QS: Data in: [63, 30, 93]
+    Pivot:   63
+    Left:    [30]
+    Right:   [93]
+QS: The length of the input data, [30], is zero or one.  Returning immediately.
+QS: The length of the input data, [93], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [63, 30, 93]
+    Left (sorted):  [30]
+    Right (sorted): [93]
+    Sorted data:    [30, 63, 93]
+QS: AFTER RECURSION...
+    Original data:  [18, 63, 30, 93, -10, -8]
+    Left (sorted):  [-10, -8]
+    Right (sorted): [30, 63, 93]
+    Sorted data:    [-10, -8, 18, 30, 63, 93]
+QS: AFTER RECURSION...
+    Original data:  [-24, 18, 63, -37, 30, 93, -10, -8, -33]
+    Left (sorted):  [-37, -33]
+    Right (sorted): [-10, -8, 18, 30, 63, 93]
+    Sorted data:    [-37, -33, -24, -10, -8, 18, 30, 63, 93]
+QS: AFTER RECURSION...
+    Original data:  [-43, -24, 18, 63, -37, 30, 93, -10, -8, -33]
+    Left (sorted):  []
+    Right (sorted): [-37, -33, -24, -10, -8, 18, 30, 63, 93]
+    Sorted data:    [-43, -37, -33, -24, -10, -8, 18, 30, 63, 93]
+QS: AFTER RECURSION...
+    Original data:  [-44, -43, -24, 18, 63, -37, 30, 93, -10, -8, -33]
+    Left (sorted):  []
+    Right (sorted): [-43, -37, -33, -24, -10, -8, 18, 30, 63, 93]
+    Sorted data:    [-44, -43, -37, -33, -24, -10, -8, 18, 30, 63, 93]
+AFTER THE SORT: [-44, -43, -37, -33, -24, -10, -8, 18, 30, 63, 93]

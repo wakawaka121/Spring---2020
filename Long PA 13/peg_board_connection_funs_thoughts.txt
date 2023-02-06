@@ -1,0 +1,45 @@
+    def is_solved(self):
+        number_of_pins = 0
+        #each row is a dict
+        for row in self.game_board:
+            #each pin is a key of a dict
+            for pin,status in row.items():
+                if status == "1":
+                    number_of_pins += 1
+        if number_of_pins > 1:
+            return False
+        else:
+            return True
+
+    def has_a_move(self):
+        return len(self.all_moves) > 0
+
+    def build_board(self, board):
+        board_dict = {}
+        for row in range(len(board)):
+            for element in range(len(board[row])):
+                board_dict[element + min(board[row])] = self.pin_connections(board, row, element)
+        return board_dict
+
+    def pin_connections(self,board,row,element):
+        row_range = len(board)
+        row_list = [row, row+1, row-1]
+        element_list = [element, element-1 , element+1]
+        connections = set()
+        for value in row_list:
+            if value in range(row_range) and value < row:
+                if element_list[0] in range(len(board[value])):
+                    connections.add(min(board[value])+(element_list[0]))
+                if element_list[1] in range(len(board[value])):
+                    connections.add(min(board[value])+(element_list[1]))
+            if value in range(row_range) and value > row:
+                if element_list[0] in range(len(board[value])):
+                    connections.add(min(board[value])+(element_list[0]))
+                if element_list[2] in range(len(board[value])):
+                    connections.add(min(board[value])+(element_list[2]))
+            if value == row:
+                if element_list[1] in range(len(board[value])):
+                    connections.add(min(board[value])+(element_list[1]))
+                if element_list[2] in range(len(board[value])):
+                    connections.add(min(board[value])+(element_list[2]))
+        return connections

@@ -1,0 +1,25 @@
+Frames per second?  (Give 0 to disable animation.)
+Please give the input data:
+INPUT DATA: [80, 90, 29, 20]
+QS: Data in: [80, 90, 29, 20]
+    Pivot:   80
+    Left:    [29, 20]
+    Right:   [90]
+QS: Data in: [29, 20]
+    Pivot:   29
+    Left:    [20]
+    Right:   []
+QS: The length of the input data, [20], is zero or one.  Returning immediately.
+QS: The length of the input data, [], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [29, 20]
+    Left (sorted):  [20]
+    Right (sorted): []
+    Sorted data:    [20, 29]
+QS: The length of the input data, [90], is zero or one.  Returning immediately.
+QS: AFTER RECURSION...
+    Original data:  [80, 90, 29, 20]
+    Left (sorted):  [20, 29]
+    Right (sorted): [90]
+    Sorted data:    [20, 29, 80, 90]
+AFTER THE SORT: [20, 29, 80, 90]
