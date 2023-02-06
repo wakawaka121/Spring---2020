@@ -1,0 +1,17 @@
+GRID (hard-coded):
+[[' ', 'L', 'L', 'L', ' '], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], [' ', 'R', 'R', 'R', ' ']]
+
+Calling update() ...
+
+This is the (updated) grid data structure:
+[[' ', 'L', 'L', 'L', ' '], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], [' ', 'R', 'R', 'O', ' ']]
+
+--- Calling print_rect() ---
+ TTT 
+L...R
+L...R
+L...O
+ BBB 
+--- END print_rect() ---
+
+TESTCASE COMPLETED

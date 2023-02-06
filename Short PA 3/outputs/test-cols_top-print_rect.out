@@ -1,0 +1,12 @@
+GRID (hard-coded):
+[[' ', 'L', 'L', 'L', ' '], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], [' ', 'R', 'R', 'R', ' ']]
+
+--- Calling print_rect() ---
+ TTT 
+L...R
+L...R
+L...R
+ BBB 
+--- END print_rect() ---
+
+TESTCASE COMPLETED

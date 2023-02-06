@@ -1,0 +1,6 @@
+Calling build_rect() ...
+
+This is the grid data structure:
+[[' ', 'L', 'L', 'L', ' '], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], ['T', '.', '.', '.', 'B'], [' ', 'R', 'R', 'R', ' ']]
+
+TESTCASE COMPLETED

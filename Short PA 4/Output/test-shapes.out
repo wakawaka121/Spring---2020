@@ -1,0 +1,26 @@
+Testing shape_alpha()
+OK
+Testing shape_bravo()
+OK
+Testing shape_charlie() arg1=<hidden>
+OK
+Testing shape_charlie() arg1=<hidden>
+OK
+Testing shape_charlie() arg1=<hidden>
+OK
+Testing shape_charlie() arg1=<hidden>
+OK
+Testing shape_delta() arg1=<hidden> arg2=<hidden>
+OK
+Testing shape_delta() arg1=<hidden> arg2=<hidden>
+OK
+Testing shape_delta() arg1=<hidden> arg2=<hidden>
+OK
+Testing shape_delta() arg1=<hidden> arg2=<hidden>
+OK
+Testing shape_echo() arg1=<hidden> arg2=<hidden> arg3=<hidden>
+OK
+Testing shape_echo() arg1=<hidden> arg2=<hidden> arg3=<hidden>
+OK
+Testing shape_echo() arg1=<hidden> arg2=<hidden> arg3=<hidden>
+OK

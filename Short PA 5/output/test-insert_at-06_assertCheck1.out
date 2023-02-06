@@ -1,0 +1,15 @@
+Testing that the assertions work in insert_at()...
+
+Starting list: None
+Inserting value: 123
+Position: 1
+Attempting the call, this should assert...
+OK
+
+Starting list: 456 -> 789
+Inserting value: abc
+Position: 3
+Attempting the call, this should assert...
+OK
+
+TESTCASE COMPLETED

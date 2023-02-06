@@ -1,0 +1,21 @@
+Testing reverse_list()...
+
+Input list: None
+
+------------ PERFORMING THE CALL ... ------------
+--- BEFORE THE LOOP ---
+original list: None
+
+------------ CALL HAS RETURNED ------------
+
+Returned list: None
+
+Checking to make sure that all of the nodes in the output list are
+from the input list.  If you see a failure reported here, then
+it's likely that you did one or more of the following:
+   - Created new nodes, instead of just changing the references
+   - Swapped values between nodes
+ ... Checking ...
+Output list node check complete.
+
+TESTCASE COMPLETED

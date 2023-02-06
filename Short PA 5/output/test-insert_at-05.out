@@ -1,0 +1,35 @@
+Testing insert_at()...
+
+Original list: None
+Inserting a node with the value abc, at position 0
+List after insertion: abc
+
+Inserting a node with the value def, at position 1
+List after insertion: abc -> def
+
+Inserting a node with the value ghi, at position 0
+List after insertion: ghi -> abc -> def
+
+Inserting a node with the value jkl, at position 2
+List after insertion: ghi -> abc -> jkl -> def
+
+Inserting a node with the value mno, at position 0
+List after insertion: mno -> ghi -> abc -> jkl -> def
+
+Inserting a node with the value pqrs, at position 4
+List after insertion: mno -> ghi -> abc -> jkl -> pqrs -> def
+
+Inserting a node with the value tuv, at position 4
+List after insertion: mno -> ghi -> abc -> jkl -> tuv -> pqrs -> def
+
+Inserting a node with the value wxyz, at position 0
+List after insertion: wxyz -> mno -> ghi -> abc -> jkl -> tuv -> pqrs -> def
+
+Inserting a node with the value 111, at position 5
+List after insertion: wxyz -> mno -> ghi -> abc -> jkl -> 111 -> tuv -> pqrs -> def
+
+Inserting a node with the value 222, at position 4
+List after insertion: wxyz -> mno -> ghi -> abc -> 222 -> jkl -> 111 -> tuv -> pqrs -> def
+
+
+TESTCASE COMPLETED

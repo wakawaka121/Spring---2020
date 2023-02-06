@@ -1,0 +1,35 @@
+Testing insert_at()...
+
+Original list: None
+Inserting a node with the value 10, at position 0
+List after insertion: 10
+
+Inserting a node with the value 20, at position 0
+List after insertion: 20 -> 10
+
+Inserting a node with the value 30, at position 0
+List after insertion: 30 -> 20 -> 10
+
+Inserting a node with the value 40, at position 0
+List after insertion: 40 -> 30 -> 20 -> 10
+
+Inserting a node with the value 50, at position 0
+List after insertion: 50 -> 40 -> 30 -> 20 -> 10
+
+Inserting a node with the value 60, at position 0
+List after insertion: 60 -> 50 -> 40 -> 30 -> 20 -> 10
+
+Inserting a node with the value 70, at position 0
+List after insertion: 70 -> 60 -> 50 -> 40 -> 30 -> 20 -> 10
+
+Inserting a node with the value 80, at position 0
+List after insertion: 80 -> 70 -> 60 -> 50 -> 40 -> 30 -> 20 -> 10
+
+Inserting a node with the value 90, at position 0
+List after insertion: 90 -> 80 -> 70 -> 60 -> 50 -> 40 -> 30 -> 20 -> 10
+
+Inserting a node with the value booyah, at position 0
+List after insertion: booyah -> 90 -> 80 -> 70 -> 60 -> 50 -> 40 -> 30 -> 20 -> 10
+
+
+TESTCASE COMPLETED
