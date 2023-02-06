@@ -1,0 +1,8 @@
+Testing pair_partial()...
+
+Input list 1: None
+Input list 2: -11 -> -3 -> 79 -> 19 -> 72 -> 21 -> 70 -> -4 -> -5 -> -35 -> 39 -> 79 -> 46 -> -6 -> -47 -> -24 -> 80 -> 45
+
+Output list: (None, -11) -> (None, -3) -> (None, 79) -> (None, 19) -> (None, 72) -> (None, 21) -> (None, 70) -> (None, -4) -> (None, -5) -> (None, -35) -> (None, 39) -> (None, 79) -> (None, 46) -> (None, -6) -> (None, -47) -> (None, -24) -> (None, 80) -> (None, 45)
+
+TESTCASE COMPLETED

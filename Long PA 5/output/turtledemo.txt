@@ -1,0 +1,25 @@
+class Turtle:
+	def __init__(self):
+		self._position = (0,0)
+		self._direction = 0
+		self._speed = 1
+
+	def turn(string, speed):
+		if string is "North":
+			direction = 0
+			step_size = speed
+		if string is "East":
+			direction = 1 
+			step_size = speed
+		if string is "South":
+			direction = 2
+			step_size = speed
+		if string is "West":
+			direction = 3
+			step_size = speed
+	
+		return direction, step_size
+
+	def one_step(direction, step_size):
+
+	def get_pos(): 

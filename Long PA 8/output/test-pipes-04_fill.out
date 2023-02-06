@@ -1,0 +1,26 @@
+Creating a Pipes class (basic test)
+-----------------
+
+Input list: [['s+', 'ns', 'nes', 'ns', 'e+'], ['nw', 'sw', 'ew', 'ne', 'sw'], ['nesw+', 'nesw+', 'nesw+', 'nesw+', 'nesw+'], ['ns', 'ne', 'new+', 'nsw', 'ns'], ['s+', 'new', 's+', 's+', 's+']]
+
+-----------------
+Reading the cell at (2,3) : 'new+'
+Reading the cell at (3,2) : 'nesw+'
+
+Setting the fill state at (2,3) to True...
+Reading the cell at (2,3) : 'new+(f)'
+Reading the cell at (3,2) : 'nesw+'
+
+Setting the fill state at (2,3) to True (a second time, redundant)...
+Reading the cell at (2,3) : 'new+(f)'
+Reading the cell at (3,2) : 'nesw+'
+
+Setting the fill state at (2,3) to False...
+Reading the cell at (2,3) : 'new+'
+Reading the cell at (3,2) : 'nesw+'
+
+Setting the fill states at (2,3) and (3,2) to True...
+Reading the cell at (2,3) : 'new+(f)'
+Reading the cell at (3,2) : 'nesw+(f)'
+
+TESTCASE COMPLETED

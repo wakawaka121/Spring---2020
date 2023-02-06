@@ -1,0 +1,10 @@
+Creating a Pipes class (basic test)
+-----------------
+
+Input list: [['w+', 'es', 'ew', 'sw', 'ne', 's+'], ['esw', 'es', 'w+', 'new+', 'esw', 's+'], ['w+', 'n+', 'nes', 'sw', 'sw', 'es']]
+
+-----------------
+width:  6
+height: 3
+
+TESTCASE COMPLETED

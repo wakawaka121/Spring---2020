@@ -1,0 +1,13 @@
+Creating a Pipes class (basic test)
+-----------------
+
+Input list: [['s+', 'ns', 'nes', 'ns', 'e+'], ['nw', 'sw', 'ew', 'ne', 'sw'], ['nesw+', 'nesw+', 'nesw+', 'nesw+', 'nesw+'], ['ns', 'ne', 'new+', 'nsw', 'ns'], ['s+', 'new', 's+', 's+', 's+']]
+
+-----------------
+square_size: 100
+
+-----------------
+Setting the square size to 75...
+new square_size: 75
+
+TESTCASE COMPLETED

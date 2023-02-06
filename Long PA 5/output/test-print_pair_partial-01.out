@@ -1,0 +1,27 @@
+Testing print_pair_partial()...
+
+Input list 1: -35 -> 74 -> 32 -> 22 -> -28 -> 38 -> 78 -> 15 -> 18 -> 5 -> 30 -> -4 -> 63 -> 45 -> -27 -> 41
+Input list 2: vbp -> icn -> hxh -> vjb -> skf -> xml -> lgs -> iic -> whx -> puj -> gxf -> cru -> enx -> emw -> rwp -> arq -> vrx -> btx -> ger -> kjh
+
+1: -35   2: vbp
+1: 74   2: icn
+1: 32   2: hxh
+1: 22   2: vjb
+1: -28   2: skf
+1: 38   2: xml
+1: 78   2: lgs
+1: 15   2: iic
+1: 18   2: whx
+1: 5   2: puj
+1: 30   2: gxf
+1: -4   2: cru
+1: 63   2: enx
+1: 45   2: emw
+1: -27   2: rwp
+1: 41   2: arq
+1: None   2: vrx
+1: None   2: btx
+1: None   2: ger
+1: None   2: kjh
+
+TESTCASE COMPLETED
